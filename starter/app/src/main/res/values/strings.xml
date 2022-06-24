@@ -2,4 +2,31 @@
     <string name="app_name">ShoeStore</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="login_desc">Welcome! Please provide an email and password to continue.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="logIn">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="welcome">Welcome</string>
+    <string name="shoe_app">-Shoe App</string>
+    <string name="about_me_dec">Hello my Name is Pablo Rocha and I am a software developer at Tecnologicod e Moneterrey in Mexico City. I am creating this app to lear how to build android applications. This is my first app.</string>
+    <string name="about_me">-About Me</string>
+    <string name="shoe_app_desc">This is a simple aplication that allows you to see some shoes and add new ones. The app wil help me to practive activities,fragments, navegation, etc.</string>
+    <string name="continueBtn">Continue</string>
+    <string name="instructions">Instructions</string>
+    <string name="view">-View</string>
+    <string name="view_desc">In the view you can see all the differnt kinds of shoes we are displaying. To get more information on any one of them just click on the item and it will take you to the details.</string>
+    <string name="details">-Details</string>
+    <string name="details_desc">In the details screen you will be able to see a lot more about the shoe you selected! The brand, color, etc. You can edit any information you like!</string>
+    <string name="next">Next</string>
+    <string name="shoes">Shoes</string>
+    <string name="add_shoe">Add Shoe</string>
+    <string name="logout">Logout</string>
+    <string name="name">Name</string>
+    <string name="company">Company</string>
+    <string name="size">Size</string>
+    <string name="desc">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>

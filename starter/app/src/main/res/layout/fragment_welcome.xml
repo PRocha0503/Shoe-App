@@ -1,0 +1,87 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.welcome.WelcomeFragment">
+
+        <TextView
+            android:id="@+id/welcomeTxt"
+            style="@style/title"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="76dp"
+            android:text="@string/welcome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/aboutMeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="59dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/about_me"
+            android:textColor="#257DC0"
+            app:layout_constraintBottom_toTopOf="@+id/aboutMeDescTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeTxt"
+            app:layout_constraintVertical_bias="0.917"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/shoeAppTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/shoe_app"
+            android:textColor="#257DC0"
+            app:layout_constraintBottom_toTopOf="@+id/shoeAppDesc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/aboutMeDescTxt"
+            android:layout_width="325dp"
+            android:layout_height="93dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/about_me_dec"
+            app:layout_constraintBottom_toTopOf="@+id/shoeAppTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeTxt"
+            app:layout_constraintVertical_bias="0.706" />
+
+        <TextView
+            android:id="@+id/shoeAppDesc"
+            android:layout_width="325dp"
+            android:layout_height="93dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/shoe_app_desc"
+            app:layout_constraintBottom_toTopOf="@+id/continueBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeTxt"
+            app:layout_constraintVertical_bias="0.807" />
+
+        <Button
+            android:id="@+id/continueBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continueBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeTxt"
+            app:layout_constraintVertical_bias="0.729" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

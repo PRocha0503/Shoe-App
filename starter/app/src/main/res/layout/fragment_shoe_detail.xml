@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#24BC3D"
+        tools:context=".screens.shoeDetail.ShoeDetailFragment">
+
+        <TextView
+            android:id="@+id/addShoeTitle"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_shoe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="104dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addShoeTitle"
+            android:src="@drawable/ic_shoe" />
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/name"
+            android:textColor="#3947C3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/companyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/company"
+            android:textColor="#3947C3"
+            app:layout_constraintStart_toStartOf="@+id/nameInput"
+            app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+
+        <TextView
+            android:id="@+id/sizeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/size"
+            android:textColor="#3947C3"
+            app:layout_constraintStart_toStartOf="@+id/companyInput"
+            app:layout_constraintTop_toBottomOf="@+id/companyInput" />
+
+        <TextView
+            android:id="@+id/descTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/desc"
+            android:textColor="#3947C3"
+            app:layout_constraintStart_toStartOf="@+id/sizeInput"
+            app:layout_constraintTop_toBottomOf="@+id/sizeInput" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="@+id/nameTxt"
+            app:layout_constraintTop_toBottomOf="@+id/nameTxt" />
+
+        <EditText
+            android:id="@+id/companyInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="@+id/companyTxt"
+            app:layout_constraintTop_toBottomOf="@+id/companyTxt"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/sizeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="@+id/sizeTxt"
+            app:layout_constraintTop_toBottomOf="@+id/sizeTxt"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/descInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="@+id/descTxt"
+            app:layout_constraintTop_toBottomOf="@+id/descTxt"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+
+            android:text="@android:string/cancel"
+            app:layout_constraintBaseline_toBaselineOf="@+id/saveBtn"
+            app:layout_constraintEnd_toStartOf="@+id/saveBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="72dp"
+            android:text="@string/save"
+            android:textColor="#5079E8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descInput"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
