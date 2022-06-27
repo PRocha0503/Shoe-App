@@ -60,14 +60,14 @@ class ShoeListViewModel: ViewModel() {
         ))
     }
 
-    fun addShoe( name: String,  size: Double,  company: String,  description: String) {
+    fun addShoe( shoe:Shoe) {
         Log.i("Debug","IN ADD")
-        val newShoe = Shoe(name,
-            size,
-            company,
-            description,
-            listOf("https://media.revistagq.com/photos/607d448f3b061fdfaf460c7f/master/w_1600%2Cc_limit/air-force-1-low-zapatillas-gvG9vB%2520(1).png"))
-        _shoesList.value = _shoesList.value?.plus(newShoe) ?: listOf(newShoe)
+//        val newShoe = Shoe(name,
+//            size,
+//            company,
+//            description,
+//            listOf("https://media.revistagq.com/photos/607d448f3b061fdfaf460c7f/master/w_1600%2Cc_limit/air-force-1-low-zapatillas-gvG9vB%2520(1).png"))
+        _shoesList.value = _shoesList.value?.plus(shoe) ?: listOf(shoe)
         Log.i("Debug",shoesList.value.toString())
     }
 

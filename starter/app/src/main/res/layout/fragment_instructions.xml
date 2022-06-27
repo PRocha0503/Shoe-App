@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    <!--This could have been either a constarin layout or linear layout because it is not very complicated, however I decided on a constrait to place the items more easily where I wanted-->
     <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/fragment_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

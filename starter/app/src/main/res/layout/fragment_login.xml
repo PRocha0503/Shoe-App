@@ -1,4 +1,5 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+<!--    I decided on a constraint layout to easily manage spaces in between-->
     <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/fragment_layout" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".screens.login.LoginFragment">
 
         <TextView
