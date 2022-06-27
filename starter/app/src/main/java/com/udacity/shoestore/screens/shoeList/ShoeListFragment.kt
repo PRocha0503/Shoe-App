@@ -9,6 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
@@ -60,6 +61,5 @@ class ShoeListFragment : Fragment() {
         shoeListBinding.sizeTxt.text = shoe.size.toString()
         shoeListBinding.image.setImageResource(R.drawable.ic_shoe)
         binding.shoeList.addView(shoeListBinding.root)
-
     }
 }

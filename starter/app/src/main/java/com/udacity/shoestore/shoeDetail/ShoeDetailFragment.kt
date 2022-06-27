@@ -29,7 +29,7 @@ class ShoeDetailFragment : Fragment() {
         binding.shoe = Shoe("", 0.0, "", "")
         binding.lifecycleOwner = this
         binding.cancelBtn.setOnClickListener{
-                view: View ->  view.findNavController().navigate(R.id.action_shoeDetailFragment_to_shoeListFragment)
+                view: View ->  view.findNavController().navigate(R.id.action_shoeDetail_to_shoeList)
         }
         binding.saveBtn.setOnClickListener{
                 view: View ->
@@ -42,7 +42,7 @@ class ShoeDetailFragment : Fragment() {
                 }
 
                 view.findNavController()
-                    .navigate(R.id.action_shoeDetailFragment_to_shoeListFragment)
+                    .navigate(R.id.action_shoeDetail_to_shoeList)
             }
 
 
